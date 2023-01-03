@@ -35,13 +35,33 @@ print("Hello Mosa!")
 # isWining = True
 #
 # print(f"your score is {score}")
+#
+# age = int(input("How old are you? \n"))
+# # print(type(age))
+# max_age = 90
+#
+# years_left = max_age - age
+# month_left = years_left * 12
+# days_left = years_left * 365
+#
+# message = f"you are {age} now. It means you got {years_left} left. This is equal to {month_left} months and {days_left} days. Make the most of out your remaining days and months."
+# print(message)
 
-age = int(input("How old are you? \n"))
-# print(type(age))
-max_age = 90
+# tip calculator
 
-years_left = max_age - age
-month_left = years_left * 12
-days_left = years_left * 365
 
-print(f"you are {age} now. It means you got {years_left} left. This is equal to {month_left} months and {days_left} days. Make the most of out your remaining days and months.")
+greetings = "Weclome to the tip Calcluator!"
+print(greetings)
+
+total = float(input("How much did the total was? \n "))
+tip = float(input("how much tip do you want to pay? \n "))
+parties = float(input("How many persons would like to split the bill? "))
+
+per_person = round((total*(1+(tip/100)))/parties, 2)
+
+message = f"the per person paymet is ${per_person}."
+
+print(message)
+
+# Call it done the day
+
